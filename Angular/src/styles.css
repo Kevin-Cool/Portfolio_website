@@ -16,3 +16,7 @@
     color: var(--purple);
   }
 html { background-color: var(--gray); }
+::selection {
+  color: var(--dark);
+  background:var(--light-purple);
+}
