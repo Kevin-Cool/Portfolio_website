@@ -7,7 +7,7 @@
 
 :root {
     --dark: #1A1A1D;
-    --gray: #4E4E50;
+    --gray: #252527;
     --dark-purple: #6F2232;
     --purple: #950740;
     --light-purple: #C3073F;
@@ -15,3 +15,4 @@
   *{
     color: var(--purple);
   }
+html { background-color: var(--gray); }
