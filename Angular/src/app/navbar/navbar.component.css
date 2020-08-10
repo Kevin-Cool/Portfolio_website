@@ -1,0 +1,47 @@
+.fill-central-space {
+  flex: 1 1 auto;
+}
+
+.sidenav-container {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  top:0;
+}
+
+.mat-drawer {
+  background-color: var(--dark);
+  overflow: hidden;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.active {
+  background-color: var(--light);
+}
+
+mat-list-item {
+  color: white !important;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.userAvatar{
+  background-size: cover;
+}
+.div-centered {
+  float: none;
+  position:absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.expanded{
+  width: 125px;
+}

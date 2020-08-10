@@ -1,0 +1,40 @@
+<mat-sidenav-container class="sidenav-container" autosize >
+  <mat-sidenav
+    #sidenav
+    mode="side"
+    opened="true"
+    hasBackdrop="false"
+    [ngClass]="{'expanded' : isExpanded}"
+  >
+    <mat-nav-list>
+
+      <mat-list-item (click)="isExpanded = !isExpanded">
+        <button mat-icon-button>
+          <mat-icon *ngIf="!isExpanded">chevron_right</mat-icon>
+          <mat-icon *ngIf="isExpanded">chevron_left</mat-icon>
+        </button>
+      </mat-list-item >
+
+        <mat-divider></mat-divider>
+
+      <div  class="div-centered">
+
+        <mat-list-item [routerLinkActive]="['active']" [routerLink]="['Home']">
+          <mat-icon svgIcon="csharp" aria-hidden="false" mat-list-icon [ngStyle]="{'color':'white'}"></mat-icon>
+          <p matLine *ngIf="isExpanded">C#</p>
+        </mat-list-item>
+
+        <mat-list-item [routerLinkActive]="['active']" [routerLink]="['Boards']" >
+          <mat-icon svgIcon="python" aria-hidden="false" mat-list-icon [ngStyle]="{'color':'white'}"></mat-icon>
+          <p matLine *ngIf="isExpanded">Python</p>
+        </mat-list-item>
+
+        <mat-list-item [routerLinkActive]="['active']" [routerLink]="['Boards']">
+          <mat-icon svgIcon="web" aria-hidden="false" mat-list-icon [ngStyle]="{'color':'white'}"></mat-icon>
+          <p matLine *ngIf="isExpanded">Web</p>
+        </mat-list-item>
+
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>
