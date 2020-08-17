@@ -20,17 +20,17 @@
       <div  class="div-centered">
 
         <mat-list-item [routerLinkActive]="['active']" [routerLink]="['Home']">
-          <mat-icon svgIcon="csharp" aria-hidden="false" mat-list-icon [ngStyle]="{'color':'white'}"></mat-icon>
+          <mat-icon svgIcon="csharp" aria-hidden="false" mat-list-icon [ngStyle]="{'color':'white'}" class="icons"></mat-icon>
           <p matLine *ngIf="isExpanded">C#</p>
         </mat-list-item>
 
         <mat-list-item [routerLinkActive]="['active']" [routerLink]="['Boards']" >
-          <mat-icon svgIcon="python" aria-hidden="false" mat-list-icon [ngStyle]="{'color':'white'}"></mat-icon>
+          <mat-icon svgIcon="python" aria-hidden="false" mat-list-icon [ngStyle]="{'color':'white'}" class="icons"></mat-icon>
           <p matLine *ngIf="isExpanded">Python</p>
         </mat-list-item>
 
         <mat-list-item [routerLinkActive]="['active']" [routerLink]="['Boards']">
-          <mat-icon svgIcon="web" aria-hidden="false" mat-list-icon [ngStyle]="{'color':'white'}"></mat-icon>
+          <mat-icon svgIcon="web" aria-hidden="false" mat-list-icon [ngStyle]="{'color':'white'}" class="icons"></mat-icon>
           <p matLine *ngIf="isExpanded">Web</p>
         </mat-list-item>
 

@@ -45,7 +45,7 @@ mat-list-item {
 .expanded{
   width: 125px;
 }
-mat-icon {
+.icons{
     /*https://codepen.io/sosuke/pen/Pjoqqp*/
     filter: invert(7%) sepia(99%) saturate(5801%) hue-rotate(330deg) brightness(93%) contrast(95%);
 }
